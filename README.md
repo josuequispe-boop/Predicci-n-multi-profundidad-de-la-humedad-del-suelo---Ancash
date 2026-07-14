@@ -11,7 +11,7 @@ Esta solución de **Sensor Virtual** reduce hasta en un **66.6% el costo de inst
 
 ---
 
-## 📌 Arquitectura del Modelo (Pipeline en Cascada)
+## Arquitectura del Modelo (Pipeline en Cascada)
 
 El flujo de trabajo se basa en un modelado jerárquico donde la predicción de la capa intermedia alimenta el siguiente nivel:
 
@@ -23,7 +23,7 @@ El flujo de trabajo se basa en un modelado jerárquico donde la predicción de l
 
 ---
 
-## 📊 Principales Hallazgos
+## Principales Hallazgos
 
 | Estación | Modelo Ganador (60 cm) | $R^2$ Score (60 cm) | Modelo Ganador (100 cm) | $R^2$ Score (100 cm) |
 | :--- | :--- | :---: | :--- | :---: |
@@ -31,7 +31,7 @@ El flujo de trabajo se basa en un modelado jerárquico donde la predicción de l
 | **Estación 2** | **Regresión Lineal** | **0.6545** | **Regresión Lineal** | **0.7735** |
 | **Estación 3** | **Regresión Lineal** | **0.5402** | **Regresión Lineal** | **0.4456** |
 
-### 💡 Conclusiones Clave:
+### Conclusiones Clave:
 1. **Dominio de la Regresión Lineal:** A pesar de la complejidad de los algoritmos de ensamble (RF, XGBoost), la Regresión Lineal Múltiple demostró la mayor estabilidad matemática e inmunidad al sobreajuste frente a cambios de edafología.
 2. **Sensibilidad al Tipo de Suelo:** La variabilidad en las métricas entre estaciones confirmó la presencia de dinámicas de infiltración no lineales e histéresis hídrica en suelos con mayor contenido de arcilla o compactación.
 3. **Propagación del Error:** El esquema secuencial valida la estimación profunda a 100 cm, aunque confirma la acumulación progresiva del error cuadrático medio (RMSE) a medida que se desciende en el perfil.
